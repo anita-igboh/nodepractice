@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+   <html>
+   <head>
+     <title>Ping Pong</title>
+     <script type="text/javascript" src="socket.io.js"></script>
+     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/
+   libs/jquery/2.1.0/jquery.js"></script>
+   </head>
+   <body>
+    <input type="text" id="username">
+   <button id="ping">Ping</button>
+   <ul id="info">
+   </ul>
+   <script>
+   var socket = io.connect('http://localhost:4000');
+   socket.on('ping', function(data){
+   console.log('ping');
+  socket.emit('pong');
+});
+</script>
+</body>
+</html>
