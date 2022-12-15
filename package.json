@@ -16,7 +16,7 @@
     "cookie-parser": "1.4.4",
     "csurf": "^1.11.0",
     "ejs": "0.8.5",
-    "express": "4.6.1",
+    "express": "4.17.3",
     "express-partials": "0.2.0",
     "express-session": "^1.17.0",
     "redis": "0.10.1",
